@@ -1,0 +1,35 @@
+# .NET Core
+bin/
+obj/
+appsettings.Development.json
+appsettings.json
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+
+# Large AI Models
+fastapi_backend/*.pt
+fastapi_backend/*.onnx
+fastapi_backend/*.dat
+
+# Uploads (Do not push user videos or photos)
+wwwroot/uploads/videos/*
+wwwroot/uploads/photos/*
+!wwwroot/uploads/videos/.gitkeep
+!wwwroot/uploads/photos/.gitkeep
+
+# Database
+*.mdf
+*.ldf
+*.sqlite
+*.db

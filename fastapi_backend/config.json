@@ -1,0 +1,24 @@
+{
+    "models": {
+        "landmark_path": "C:/Users/Compumarts/OneDrive/Desktop/projects/engagement_project/models/landmarks/shape_predictor_68_face_landmarks.dat",
+        "yolo_path": "C:/Users/Compumarts/OneDrive/Desktop/projects/engagement_project/models/yolo/yolov8n-face-lindevs.pt",
+        "hopenet_path": "C:/Users/Compumarts/OneDrive/Desktop/projects/engagement_project/models/hopenet/hopenet_robust_alpha1.pkl",
+        "hse_path": "C:/Users/Compumarts/OneDrive/Desktop/projects/engagement_project/models/emotion/enet_b2_8.onnx"
+    },
+    "pipeline": {
+        "pipeline_weight": 0.40,
+        "behavior_weight": 0.60,
+        "final_threshold": 0.60,
+        "skip_frames": 4,
+        "ear_threshold": 0.246,
+        "gaze_h_threshold": 0.247,
+        "gaze_var_threshold": 0.0005,
+        "mar_max_threshold": 0.406,
+        "head_yaw_threshold": 4.62,
+        "head_yaw_var_threshold": 9.88
+    },
+    "server": {
+        "host": "0.0.0.0",
+        "port": 8000
+    }
+}

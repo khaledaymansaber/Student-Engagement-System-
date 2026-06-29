@@ -1,0 +1,87 @@
+@model IEnumerable<StudentEngagementSystem.Models.Notification>
+@{
+    var unreadCount = Model.Count(n => !n.IsRead);
+}
+
+<div class="relative" x-data="{ open: false }" @@click.away="open = false">
+    <!-- Bell Button -->
+    <button @@click="open = !open" class="relative p-2 text-gray-400 hover:text-gray-600 rounded-full hover:bg-gray-100 transition-colors focus:outline-none">
+        <i class="fa-regular fa-bell text-lg"></i>
+        @if (unreadCount > 0)
+        {
+            <span class="absolute top-1.5 right-1.5 flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
+            </span>
+        }
+    </button>
+
+    <!-- Dropdown Panel -->
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-100"
+         x-transition:enter-start="transform opacity-0 scale-95"
+         x-transition:enter-end="transform opacity-100 scale-100"
+         x-transition:leave="transition ease-in duration-75"
+         x-transition:leave-start="transform opacity-100 scale-100"
+         x-transition:leave-end="transform opacity-0 scale-95"
+         class="absolute right-0 mt-2 w-80 bg-white rounded-xl shadow-lg border border-gray-100 z-50 overflow-hidden" 
+         style="display: none;">
+        
+        <div class="px-4 py-3 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
+            <h3 class="text-sm font-bold text-gray-800">Notifications</h3>
+            @if (unreadCount > 0)
+            {
+                <form asp-controller="Notifications" asp-action="MarkAllAsRead" method="post" class="m-0">
+                    <button type="submit" class="text-xs font-semibold text-brand-600 hover:text-brand-700">Mark all read</button>
+                </form>
+            }
+        </div>
+
+        <div class="max-h-96 overflow-y-auto">
+            @if (!Model.Any())
+            {
+                <div class="p-6 text-center text-gray-500 text-sm">
+                    <i class="fa-regular fa-bell-slash text-2xl text-gray-300 mb-2 block"></i>
+                    No notifications yet.
+                </div>
+            }
+            else
+            {
+                <ul class="divide-y divide-gray-50">
+                    @foreach (var notification in Model)
+                    {
+                        var iconClass = notification.Type switch
+                        {
+                            "Success" => "fa-check-circle text-emerald-500 bg-emerald-50",
+                            "Warning" => "fa-triangle-exclamation text-orange-500 bg-orange-50",
+                            _ => "fa-info-circle text-brand-500 bg-brand-50"
+                        };
+
+                        var bgClass = notification.IsRead ? "bg-white" : "bg-brand-50/30";
+
+                        <li class="relative">
+                            <form asp-controller="Notifications" asp-action="MarkAsRead" asp-route-id="@notification.Id" method="post" class="m-0">
+                                <button type="submit" class="w-full text-left p-4 hover:bg-gray-50 transition-colors flex items-start gap-3 @bgClass">
+                                    <div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 @iconClass.Split("bg-")[1] @iconClass.Split(" ")[1]">
+                                        <i class="fa-solid @iconClass.Split(" ")[0] text-sm"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-bold text-gray-900 mb-0.5 @(notification.IsRead ? "" : "text-brand-900")">@notification.Title</p>
+                                        <p class="text-xs text-gray-500 line-clamp-2">@notification.Message</p>
+                                        <p class="text-[10px] font-medium text-gray-400 mt-1 uppercase tracking-wider">
+                                            @notification.CreatedAt.ToLocalTime().ToString("MMM dd, HH:mm")
+                                        </p>
+                                    </div>
+                                    @if (!notification.IsRead)
+                                    {
+                                        <div class="w-2 h-2 bg-brand-500 rounded-full mt-1 shrink-0"></div>
+                                    }
+                                </button>
+                            </form>
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+    </div>
+</div>

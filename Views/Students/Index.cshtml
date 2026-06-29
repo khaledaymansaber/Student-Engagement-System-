@@ -1,0 +1,93 @@
+@model IEnumerable<StudentEngagementSystem.Models.Student>
+@{
+    ViewData["Title"] = "Manage Students";
+}
+
+<div class="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col mb-4 overflow-hidden">
+    <!-- Header -->
+    <div class="px-6 py-5 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
+        <h5 class="font-bold text-gray-800 text-lg">Student Roster</h5>
+        <a asp-action="Create" class="inline-flex items-center justify-center px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white text-sm font-semibold rounded-lg shadow-sm transition-colors">
+            <i class="fa-solid fa-plus mr-2"></i> Add Student
+        </a>
+    </div>
+
+    <!-- Content -->
+    <div class="p-0">
+        @if (!Model.Any())
+        {
+            <div class="text-center py-16 px-6">
+                <div class="w-16 h-16 bg-gray-50 text-gray-400 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h5 class="text-xl font-bold text-gray-900 mb-2">No students found</h5>
+                <p class="text-gray-500 max-w-sm mx-auto mb-6">You haven't added any students yet. Get started by adding your first student to track their engagement.</p>
+                <a asp-action="Create" class="inline-flex items-center justify-center px-5 py-2.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-semibold rounded-lg shadow-sm transition-colors">
+                    Add Student
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-gray-50/80 text-gray-500 text-xs uppercase font-semibold">
+                        <tr>
+                            <th class="px-6 py-4 rounded-tl-xl">Student</th>
+                            <th class="px-6 py-4">ID Code</th>
+                            <th class="px-6 py-4">Added On</th>
+                            <th class="px-6 py-4 text-right rounded-tr-xl">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        @foreach (var item in Model)
+                        {
+                            <tr class="hover:bg-gray-50/50 transition-colors">
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        @if (!string.IsNullOrEmpty(item.Photo))
+                                        {
+                                            <img src="~/uploads/photos/@item.Photo" class="w-10 h-10 rounded-full object-cover shadow-sm mr-4" alt="@item.FullName" />
+                                        }
+                                        else
+                                        {
+                                            <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center font-bold shadow-sm mr-4">
+                                                @item.FullName.Substring(0, 1).ToUpper()
+                                            </div>
+                                        }
+                                        <div>
+                                            <div class="font-bold text-gray-900">@item.FullName</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                        @item.StudentCode
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 font-medium">
+                                    @item.CreatedDate.ToString("MMM dd, yyyy")
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                    <div class="flex items-center justify-end gap-2">
+                                        <a asp-action="Details" asp-route-id="@item.StudentId" class="w-8 h-8 inline-flex items-center justify-center rounded-lg text-brand-600 hover:bg-brand-50 transition-colors" title="View Details">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a asp-action="Edit" asp-route-id="@item.StudentId" class="w-8 h-8 inline-flex items-center justify-center rounded-lg text-amber-500 hover:bg-amber-50 transition-colors" title="Edit Student">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                        <form asp-action="Delete" asp-route-id="@item.StudentId" method="post" class="inline" onsubmit="return confirm('Are you sure you want to delete @item.FullName? This will delete all their videos and analysis data.');">
+                                            <button type="submit" class="w-8 h-8 inline-flex items-center justify-center rounded-lg text-red-500 hover:bg-red-50 transition-colors" title="Delete Student">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</div>

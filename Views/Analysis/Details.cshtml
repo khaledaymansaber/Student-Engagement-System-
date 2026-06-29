@@ -1,0 +1,337 @@
+@model StudentEngagementSystem.ViewModels.Analysis.AnalysisViewModel
+@{
+    ViewData["Title"] = "Analysis Results";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Dashboard</title>
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Inter', 'sans-serif'] },
+            colors: {
+              brand: {
+                50: '#f0fdf4',
+                100: '#dcfce7',
+                500: '#22c55e',
+                600: '#16a34a',
+                700: '#15803d',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+    
+    <style type="text/tailwindcss">
+        @@layer utilities {
+            .glass-card {
+                @@apply bg-white rounded-2xl shadow-sm border border-gray-100;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col antialiased">
+
+<!-- Top Navigation -->
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <div class="px-6 py-4 flex items-center justify-between max-w-7xl mx-auto w-full">
+        <div class="flex items-center gap-4">
+            <a asp-controller="Students" asp-action="Details" asp-route-id="@Model.Student.StudentId" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-gray-100 hover:text-gray-900 transition-colors border border-gray-200" title="Back to Student Profile">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div>
+                <h1 class="text-xl font-bold text-gray-900 leading-tight">@Model.Video.VideoName</h1>
+                <p class="text-xs font-medium text-gray-500 mt-0.5">Analysis Date: @Model.Video.UploadDate.ToString("MMM dd, yyyy")</p>
+            </div>
+        </div>
+        <div class="flex items-center gap-3">
+            <a asp-controller="Videos" asp-action="Download" asp-route-id="@Model.Video.VideoId" class="inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors shadow-sm">
+                <i class="fa-solid fa-download mr-2 text-brand-600"></i> Download Video
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Main Dashboard Content -->
+<main class="flex-1 p-6 max-w-7xl mx-auto w-full">
+    
+    <!-- Top Stats Row -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+        
+        <!-- Student Profile Widget -->
+        <div class="glass-card p-6 flex flex-col items-center justify-center relative overflow-hidden group">
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></div>
+            <div class="relative z-10 flex flex-col items-center w-full">
+                @if (!string.IsNullOrEmpty(Model.Student.Photo))
+                {
+                    <img src="~/uploads/photos/@Model.Student.Photo" alt="@Model.Student.FullName" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-md mb-3 group-hover:border-brand-100 transition-colors bg-white" />
+                }
+                else
+                {
+                    <div class="w-20 h-20 rounded-full bg-gray-100 text-gray-400 flex items-center justify-center text-2xl font-bold border-4 border-white shadow-md mb-3 group-hover:bg-brand-100 group-hover:text-brand-600 transition-colors">
+                        @Model.Student.FullName.Substring(0, 1).ToUpper()
+                    </div>
+                }
+                <h3 class="text-lg font-bold text-gray-900 group-hover:text-white transition-colors text-center w-full truncate" title="@Model.Student.FullName">@Model.Student.FullName</h3>
+                <p class="text-xs font-medium text-gray-500 group-hover:text-emerald-100 transition-colors text-center mt-1">ID: @Model.Student.StudentCode</p>
+            </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="md:col-span-2 glass-card p-6 flex flex-col justify-center">
+            <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-5">Key Metrics</h3>
+            
+            <div class="grid grid-cols-1 gap-4">
+                @{
+                    bool isEngaged = Model.AnalysisResult.EngagementPercentage >= 60;
+                    string engColor = isEngaged ? "text-emerald-500" : "text-rose-500";
+                    string engBg = isEngaged ? "bg-emerald-50" : "bg-rose-50";
+                    string engIcon = isEngaged ? "fa-arrow-trend-up" : "fa-arrow-trend-down";
+                }
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl @engBg @engColor flex items-center justify-center text-xl shrink-0 border @(isEngaged ? "border-emerald-100" : "border-rose-100")">
+                        <i class="fa-solid @engIcon"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-gray-500 mb-1">Engagement Score</p>
+                        <p class="text-2xl font-black text-gray-900">@Model.AnalysisResult.EngagementPercentage.ToString("0")%</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 pt-4 border-t border-gray-100 flex justify-center">
+                <div class="flex items-center">
+                    <span class="text-xs font-semibold text-gray-500 mr-2">Dominant Emotion:</span>
+                    <span class="text-xs font-bold text-gray-900 bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-lg shadow-sm">@Model.AnalysisResult.DominantEmotion</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Engagement Pie Chart -->
+        <div class="glass-card p-6 flex flex-col">
+            <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">Engagement Ratio</h3>
+            <div class="flex-1 relative min-h-[120px]">
+                <canvas id="engagementPieChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Grid Row -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+        
+        <!-- Engagement Timeline -->
+        <div class="lg:col-span-2 glass-card p-6 flex flex-col">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider">Engagement Timeline</h3>
+            </div>
+            
+            <div class="flex-1 relative min-h-[240px]">
+                <canvas id="engagementTimelineChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Emotion Pie -->
+        <div class="glass-card p-6 flex flex-col">
+            <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">Emotion Distribution</h3>
+            <div class="flex-1 relative min-h-[200px]">
+                <canvas id="emotionPieChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</main>
+
+<input type="hidden" id="engagementTimelineData" value="@Model.EngagementTimelineJson" />
+<input type="hidden" id="emotionTimelineData" value="@Model.EmotionTimelineJson" />
+<input type="hidden" id="disengagementIntervalsData" value="@Model.DisengagementIntervalsJson" />
+<input type="hidden" id="engagementScorePct" value="@Model.AnalysisResult.EngagementPercentage.ToString(System.Globalization.CultureInfo.InvariantCulture)" />
+<input type="hidden" id="emoNeutral" value="@Model.AnalysisResult.EmotionNeutral.ToString(System.Globalization.CultureInfo.InvariantCulture)" />
+<input type="hidden" id="emoHappy" value="@Model.AnalysisResult.EmotionHappy.ToString(System.Globalization.CultureInfo.InvariantCulture)" />
+<input type="hidden" id="emoSad" value="@Model.AnalysisResult.EmotionSad.ToString(System.Globalization.CultureInfo.InvariantCulture)" />
+<input type="hidden" id="emoAngry" value="@Model.AnalysisResult.EmotionAngry.ToString(System.Globalization.CultureInfo.InvariantCulture)" />
+<input type="hidden" id="emoFearful" value="@Model.AnalysisResult.EmotionFear.ToString(System.Globalization.CultureInfo.InvariantCulture)" />
+<input type="hidden" id="emoDisgusted" value="@Model.AnalysisResult.EmotionDisgust.ToString(System.Globalization.CultureInfo.InvariantCulture)" />
+<input type="hidden" id="emoSurprised" value="@Model.AnalysisResult.EmotionSurprised.ToString(System.Globalization.CultureInfo.InvariantCulture)" />
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (typeof Chart === 'undefined') {
+            console.error("Chart.js failed to load!");
+            return;
+        }
+        
+        Chart.register(ChartDataLabels);
+
+        Chart.defaults.font.family = "'Inter', sans-serif";
+        Chart.defaults.color = "#64748b";
+        Chart.defaults.scale.grid.color = "#f1f5f9";
+        Chart.defaults.plugins.tooltip.backgroundColor = "#1e293b";
+        Chart.defaults.plugins.tooltip.padding = 10;
+        Chart.defaults.plugins.tooltip.cornerRadius = 8;
+
+        // Helper safely parses JSON
+        function safeParse(id) {
+            const el = document.getElementById(id);
+            if (!el || !el.value || el.value === "[]" || el.value === "null") return [];
+            try { return JSON.parse(el.value); } catch(e) { return []; }
+        }
+
+        // 1. Intervals count (Removed)
+
+        // 2. Engagement Pie Chart (from Final Score)
+        const engScore = parseFloat(document.getElementById('engagementScorePct')?.value) || 0;
+        const disengScore = 100 - engScore;
+        
+        const ctxEngPie = document.getElementById('engagementPieChart');
+        if (ctxEngPie) {
+            new Chart(ctxEngPie.getContext('2d'), {
+                type: 'pie',
+                data: {
+                    labels: ['Engaged', 'Disengaged'],
+                    datasets: [{
+                        data: [engScore, disengScore],
+                        backgroundColor: ['#22c55e', '#f43f5e'], // brand-500, rose-500
+                        borderWidth: 2,
+                        borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { 
+                        legend: { display: false },
+                        datalabels: {
+                            color: '#ffffff',
+                            font: { weight: 'bold', size: 14 },
+                            formatter: function(value, context) {
+                                if(value === 0) return '';
+                                return Math.round(value) + '%';
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 3. Emotion Pie
+        const eData = [
+            parseFloat(document.getElementById('emoAngry')?.value) || 0,
+            parseFloat(document.getElementById('emoDisgusted')?.value) || 0,
+            parseFloat(document.getElementById('emoFearful')?.value) || 0,
+            parseFloat(document.getElementById('emoHappy')?.value) || 0,
+            parseFloat(document.getElementById('emoNeutral')?.value) || 0,
+            parseFloat(document.getElementById('emoSad')?.value) || 0,
+            parseFloat(document.getElementById('emoSurprised')?.value) || 0
+        ];
+        const ctxEmoPie = document.getElementById('emotionPieChart');
+        if (ctxEmoPie) {
+            new Chart(ctxEmoPie.getContext('2d'), {
+                type: 'pie',
+                data: {
+                    labels: ['Angry', 'Disgusted', 'Fearful', 'Happy', 'Neutral', 'Sad', 'Surprised'],
+                    datasets: [{
+                        data: eData,
+                        backgroundColor: ['#f43f5e', '#3b82f6', '#14b8a6', '#fbbf24', '#10b981', '#22c55e', '#f97316'],
+                        borderWidth: 2, borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { 
+                        legend: { display: false },
+                        datalabels: {
+                            color: '#ffffff',
+                            font: { weight: 'bold', size: 12 },
+                            formatter: function(value, context) {
+                                if(value === 0) return '';
+                                return Math.round(value) + '%';
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 4. Engagement Binary Classification Chart (Stepped Line)
+        const engData = safeParse('engagementTimelineData');
+        const ctxEng = document.getElementById('engagementTimelineChart');
+        if (ctxEng && engData.length > 0) {
+            // Check if backend used timestamp (Python) or time (Mock)
+            const labels = engData.map(d => {
+                if (d.timestamp !== undefined && d.timestamp !== 0) return d.timestamp;
+                return d.time;
+            });
+            
+            // Get binary state (1 for engaged, 0 for disengaged)
+            const getIsEngaged = (d) => {
+                if (d.is_engaged !== undefined) return d.is_engaged ? 1 : 0;
+                if (d.isEngaged !== undefined) return d.isEngaged ? 1 : 0;
+                if (d.engagement_score !== undefined && d.engagement_score !== 0) return d.engagement_score >= 0.5 ? 1 : 0;
+                // Fallback to old level prop
+                if (d.level !== undefined) return d.level >= 50 ? 1 : 0;
+                return 1;
+            };
+
+            const binaryScores = engData.map(d => getIsEngaged(d));
+
+            new Chart(ctxEng.getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Engaged',
+                            data: binaryScores,
+                            borderColor: '#22c55e', // brand-500
+                            backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                            fill: true,
+                            stepped: 'middle',
+                            pointRadius: 0,
+                            borderWidth: 2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    scales: {
+                        y: { 
+                            display: true, 
+                            min: 0, 
+                            max: 1.2, 
+                            ticks: { 
+                                stepSize: 1, 
+                                callback: function(value) {
+                                    if (value === 1) return 'Focused';
+                                    if (value === 0) return 'Distracted';
+                                    return '';
+                                } 
+                            } 
+                        },
+                        x: { ticks: { maxTicksLimit: 15 } }
+                    },
+                    plugins: { 
+                        legend: { display: false },
+                        datalabels: { display: false }
+                    }
+                }
+            });
+        }
+
+    });
+</script>
+</body>
+</html>

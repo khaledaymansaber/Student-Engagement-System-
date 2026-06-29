@@ -1,0 +1,614 @@
+--- Video: 5000441024 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000441058 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000441067 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000671041 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000671042 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000671048 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000671049 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000671058 ---
+Result: Engaged (FP) (Score: 98.9%)
+Reasoning:
+  - Final Score (98.9%) = [Pipeline Weight 40% * 97.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000671061 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000671069 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000671070 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000951019 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000951023 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000951024 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000951027 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000952034 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000952062 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5000952083 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100091049 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100341043 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100341074 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100342022 ---
+Result: Engaged (FP) (Score: 60.0%)
+Reasoning:
+  - Final Score (60.0%) = [Pipeline Weight 40% * 0.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (60.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100342023 ---
+Result: Engaged (FP) (Score: 60.0%)
+Reasoning:
+  - Final Score (60.0%) = [Pipeline Weight 40% * 0.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (60.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100342024 ---
+Result: Engaged (FP) (Score: 60.0%)
+Reasoning:
+  - Final Score (60.0%) = [Pipeline Weight 40% * 0.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (60.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100342028 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100342036 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100342048 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100351001 ---
+Result: Engaged (FP) (Score: 84.0%)
+Reasoning:
+  - Final Score (84.0%) = [Pipeline Weight 40% * 60.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (84.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100351002 ---
+Result: Engaged (FP) (Score: 89.3%)
+Reasoning:
+  - Final Score (89.3%) = [Pipeline Weight 40% * 73.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (89.3%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100351013 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100351022 ---
+Result: Engaged (FP) (Score: 98.9%)
+Reasoning:
+  - Final Score (98.9%) = [Pipeline Weight 40% * 97.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100351042 ---
+Result: Engaged (FP) (Score: 99.5%)
+Reasoning:
+  - Final Score (99.5%) = [Pipeline Weight 40% * 98.7%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (99.5%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100352022 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100352043 ---
+Result: Engaged (FP) (Score: 97.3%)
+Reasoning:
+  - Final Score (97.3%) = [Pipeline Weight 40% * 93.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (97.3%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100352054 ---
+Result: Engaged (FP) (Score: 90.4%)
+Reasoning:
+  - Final Score (90.4%) = [Pipeline Weight 40% * 76.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (90.4%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100401023 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100401034 ---
+Result: Engaged (FP) (Score: 79.2%)
+Reasoning:
+  - Final Score (79.2%) = [Pipeline Weight 40% * 48.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (79.2%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100401043 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100401065 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100402001 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100402062 ---
+Result: Engaged (FP) (Score: 98.4%)
+Reasoning:
+  - Final Score (98.4%) = [Pipeline Weight 40% * 96.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.4%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100402063 ---
+Result: Engaged (FP) (Score: 89.3%)
+Reasoning:
+  - Final Score (89.3%) = [Pipeline Weight 40% * 73.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (89.3%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100452016 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100461007 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100462003 ---
+Result: Engaged (FP) (Score: 94.1%)
+Reasoning:
+  - Final Score (94.1%) = [Pipeline Weight 40% * 85.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (94.1%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100472001 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 5100472058 ---
+Result: Engaged (FP) (Score: 98.9%)
+Reasoning:
+  - Final Score (98.9%) = [Pipeline Weight 40% * 97.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120116 ---
+Result: Engaged (FP) (Score: 76.5%)
+Reasoning:
+  - Final Score (76.5%) = [Pipeline Weight 40% * 41.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (76.5%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120120 ---
+Result: Engaged (FP) (Score: 98.7%)
+Reasoning:
+  - Final Score (98.7%) = [Pipeline Weight 40% * 96.7%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.7%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120123 ---
+Result: Engaged (FP) (Score: 90.9%)
+Reasoning:
+  - Final Score (90.9%) = [Pipeline Weight 40% * 77.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (90.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120127 ---
+Result: Engaged (FP) (Score: 72.6%)
+Reasoning:
+  - Final Score (72.6%) = [Pipeline Weight 40% * 31.5%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (72.6%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 826412013 ---
+Result: Engaged (FP) (Score: 95.7%)
+Reasoning:
+  - Final Score (95.7%) = [Pipeline Weight 40% * 89.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (95.7%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120150 ---
+Result: Engaged (FP) (Score: 61.1%)
+Reasoning:
+  - Final Score (61.1%) = [Pipeline Weight 40% * 2.7%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (61.1%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120156 ---
+Result: Engaged (FP) (Score: 79.7%)
+Reasoning:
+  - Final Score (79.7%) = [Pipeline Weight 40% * 49.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (79.7%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120169 ---
+Result: Engaged (FP) (Score: 94.7%)
+Reasoning:
+  - Final Score (94.7%) = [Pipeline Weight 40% * 86.7%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (94.7%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120211 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120231 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120239 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120240 ---
+Result: Engaged (FP) (Score: 99.5%)
+Reasoning:
+  - Final Score (99.5%) = [Pipeline Weight 40% * 98.7%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (99.5%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120243 ---
+Result: Engaged (FP) (Score: 97.8%)
+Reasoning:
+  - Final Score (97.8%) = [Pipeline Weight 40% * 94.5%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (97.8%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120249 ---
+Result: Engaged (FP) (Score: 77.6%)
+Reasoning:
+  - Final Score (77.6%) = [Pipeline Weight 40% * 44.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (77.6%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120254 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120256 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120261 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120262 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120263 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120265 ---
+Result: Engaged (FP) (Score: 99.5%)
+Reasoning:
+  - Final Score (99.5%) = [Pipeline Weight 40% * 98.7%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (99.5%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120266 ---
+Result: Engaged (FP) (Score: 98.9%)
+Reasoning:
+  - Final Score (98.9%) = [Pipeline Weight 40% * 97.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120269 ---
+Result: Engaged (FP) (Score: 82.9%)
+Reasoning:
+  - Final Score (82.9%) = [Pipeline Weight 40% * 57.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (82.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120279 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120282 ---
+Result: Engaged (FP) (Score: 98.4%)
+Reasoning:
+  - Final Score (98.4%) = [Pipeline Weight 40% * 96.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.4%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 8264120284 ---
+Result: Engaged (FP) (Score: 98.9%)
+Reasoning:
+  - Final Score (98.9%) = [Pipeline Weight 40% * 97.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 88265401750 ---
+Result: Engaged (FP) (Score: 97.9%)
+Reasoning:
+  - Final Score (97.9%) = [Pipeline Weight 40% * 94.7%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (97.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 907001480 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 907001950 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9289010114 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 928901014 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9289010145 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9289010152 ---
+Result: Engaged (FP) (Score: 98.9%)
+Reasoning:
+  - Final Score (98.9%) = [Pipeline Weight 40% * 97.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9289010276 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9403280271 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9877360120 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9877360133 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9877360157 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9877360169 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9877360172 ---
+Result: Engaged (FP) (Score: 98.9%)
+Reasoning:
+  - Final Score (98.9%) = [Pipeline Weight 40% * 97.3%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (98.9%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9877360256 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
+
+
+--- Video: 9877360270 ---
+Result: Engaged (FP) (Score: 100.0%)
+Reasoning:
+  - Final Score (100.0%) = [Pipeline Weight 40% * 100.0%] + [Behavior Weight 60% * 100.0%]
+  - Since Final Score (100.0%) is >= 60.0%, the video is marked as 'Engaged (FP)'.
