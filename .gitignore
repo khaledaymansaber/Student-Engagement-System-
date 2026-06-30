@@ -17,10 +17,6 @@ __pycache__/
 venv/
 env/
 
-# Large AI Models
-fastapi_backend/*.pt
-fastapi_backend/*.onnx
-fastapi_backend/*.dat
 
 # Uploads (Do not push user videos or photos)
 wwwroot/uploads/videos/*
